@@ -1,3 +1,4 @@
+import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="bg-[#C6EBC5] p-4 my-5 ">
@@ -41,6 +42,10 @@ const Navbar = () => {
         <li className="list-none">
           <a href="#">জবস</a>
         </li>
+        <li className="list-none">
+          <a href="#"></a>
+        </li>
+        <FaSearch className="text-[#F23E3E] cursor-pointer" />
       </nav>
     </div>
   );
