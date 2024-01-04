@@ -1,4 +1,5 @@
-import Header from "./pages/Home/Header"
+import Header from "./pages/Home/Header";
+import Navbar from "./pages/Home/Navbar";
 
 const App = () => {
   return (
@@ -6,8 +7,9 @@ const App = () => {
       <div className="max-w-[1230px] mx-auto">
         <Header />
       </div>
+      <Navbar />
     </div>
   );
-}
+};
 
-export default App
+export default App;
