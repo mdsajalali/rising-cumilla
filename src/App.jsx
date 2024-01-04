@@ -1,3 +1,4 @@
+import Footer from "./pages/Home/Footer";
 import Header from "./pages/Home/Header";
 import Navbar from "./pages/Home/Navbar";
 
@@ -8,6 +9,7 @@ const App = () => {
         <Header />
       </div>
       <Navbar />
+      <Footer />
     </div>
   );
 };
