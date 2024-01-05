@@ -77,7 +77,7 @@ const Header = () => {
             <img className="w-56" src={logo} alt="logo" />
           </a>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end hidden sm:block">
           <button className="btn btn-ghost btn-circle">
             <FaFacebook size={25} />
           </button>
