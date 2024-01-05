@@ -7,6 +7,7 @@ import App from "./App";
 import DistrictNewsDetail from "./components/DistrictNewsDetail";
 import Root from "./Root/Root";
 import NewsCartDetail from "./components/NewsCartDetail";
+import InternationalNewsDetail from "./components/InternationalNewsDetail";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
         element: <NewsCartDetail />,
       },
       {
-        path: "/login",
-        element: <h1>Login</h1>,
+        path: "/internationalNewsDetail/:id",
+        element: <InternationalNewsDetail />,
       },
     ],
   },

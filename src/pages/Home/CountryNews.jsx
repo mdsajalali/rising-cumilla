@@ -1,4 +1,4 @@
-const Country = () => {
+const CountryNews = () => {
   return (
     <div className="max-w-[1230px] mx-auto my-10">
       <h1 className="mb-3 text-2xl">সারাদেশ</h1>
@@ -106,4 +106,4 @@ const Country = () => {
   );
 };
 
-export default Country;
+export default CountryNews;
