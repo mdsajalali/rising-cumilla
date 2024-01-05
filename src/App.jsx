@@ -2,6 +2,7 @@ import Footer from "./pages/Home/Footer";
 import Header from "./pages/Home/Header";
 import Navbar from "./pages/Home/Navbar";
 import Heading from './pages/Home/Heading';
+import DistrictNews from "./pages/Home/DistrictNews";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       </div>
       <Navbar />
       <Heading />
+      <DistrictNews />
       <Footer />
     </div>
   );

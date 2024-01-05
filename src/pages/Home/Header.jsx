@@ -73,7 +73,7 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">
+          <a className="cursor-pointer">
             <img className="w-56" src={logo} alt="logo" />
           </a>
         </div>
@@ -93,7 +93,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center justify-between ml-5">
-        <p>জানুয়ারি ৪, ২০২৪ ৩:৩৯ পিএম</p> 
+        <p>জানুয়ারি ৪, ২০২৪ ৩:৩৯ পিএম</p>
         <p>Contribute News কনভার্টার</p>
       </div>
     </>
