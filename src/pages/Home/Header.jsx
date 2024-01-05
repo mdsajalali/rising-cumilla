@@ -1,6 +1,33 @@
+import { useEffect, useState } from "react";
 import { FaFacebook, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import logo from "../../assets/images/logo.webp";
 const Header = () => {
+  const [formattedDate, setFormattedDate] = useState("");
+
+  useEffect(() => {
+    const updateDate = () => {
+      const currentDate = new Date();
+
+      const month = currentDate.getMonth() + 1;
+      const day = currentDate.getDate();
+      const year = currentDate.getFullYear();
+
+      let hours = currentDate.getHours();
+      const minutes = currentDate.getMinutes();
+      const seconds = currentDate.getSeconds();
+      const ampm = hours >= 12 ? "PM" : "AM";
+
+      hours = hours % 12;
+      hours = hours || 12; 
+
+      const newFormattedDate = `${month}/${day}/${year} ${hours}:${minutes}:${seconds} ${ampm}`;
+      setFormattedDate(newFormattedDate);
+    };
+
+    const intervalId = setInterval(updateDate, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
       <div className="navbar">
@@ -93,7 +120,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center justify-between   px-5">
-        <p>জানুয়ারি ৪, ২০২৪ ৩:৩৯ পিএম</p>
+        <p>{formattedDate}</p>
         <p>Contribute News কনভার্টার</p>
       </div>
     </>
