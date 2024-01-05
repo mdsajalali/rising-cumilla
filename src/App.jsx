@@ -1,6 +1,7 @@
 import Footer from "./pages/Home/Footer";
 import Header from "./pages/Home/Header";
 import Navbar from "./pages/Home/Navbar";
+import Heading from './pages/Home/Heading';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Header />
       </div>
       <Navbar />
+      <Heading />
       <Footer />
     </div>
   );

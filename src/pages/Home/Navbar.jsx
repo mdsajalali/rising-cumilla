@@ -1,8 +1,8 @@
 import { FaSearch } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <div className="bg-[#C6EBC5] p-4 my-5 ">
-      <nav className="flex max-w-[1230px] mx-auto items-center justify-evenly">
+    <div className="bg-[#C6EBC5] p-4 my-5 xl:block hidden">
+      <nav className="flex max-w-[1230px] mx-auto items-center justify-evenly ">
         <li className="list-none">
           <a href="#">প্রচ্ছদ</a>
         </li>
