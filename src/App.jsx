@@ -1,11 +1,8 @@
 import CountryNews from "./pages/Home/CountryNews";
 import DistrictNews from "./pages/Home/DistrictNews";
 import Entertainment from "./pages/Home/Entertainment";
-import Footer from "./pages/Home/Footer";
-import Header from "./pages/Home/Header";
 import Heading from "./pages/Home/Heading";
 import InternationalNews from "./pages/Home/InternationalNews";
-import Navbar from "./pages/Home/Navbar";
 import NewsCarts from "./pages/Home/NewsCarts";
 import NewsInformation from "./pages/Home/NewsInformation";
 import Sports from "./pages/Home/Sports";
@@ -14,10 +11,6 @@ import TopNews from "./pages/Home/TopNews";
 const App = () => {
   return (
     <div className="bg-[#FAFFF1] min-h-screen">
-      <div className="max-w-[1230px] mx-auto">
-        <Header />
-      </div>
-      <Navbar />
       <Heading />
       <TopNews />
       <NewsCarts />
@@ -33,7 +26,6 @@ const App = () => {
         <h1 className="text-center my-10 pt-5   text-2xl">লাইফস্টাইল</h1>
         <NewsCarts />
       </div>
-      <Footer />
     </div>
   );
 };

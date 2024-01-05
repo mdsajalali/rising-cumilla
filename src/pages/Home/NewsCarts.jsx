@@ -3,7 +3,6 @@ import NewsDetails from "../../components/NewsDetails";
 
 const NewsCarts = () => {
   const [newsCart, setNewsCart] = useState([]);
-  console.log(newsCart);
   useEffect(() => {
     fetch("News.json")
       .then((res) => res.json())

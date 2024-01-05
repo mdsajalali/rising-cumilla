@@ -3,7 +3,6 @@ import DistrictCart from "../../components/DistrictCart";
 
 const DistrictNews = () => {
   const [news, setNews] = useState([]);
-  console.log(news);
   useEffect(() => {
     fetch("DistrictNews.json")
       .then((res) => res.json())

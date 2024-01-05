@@ -4,7 +4,6 @@ import InternationalNewsCart from "../../components/InternationalNewsCart";
 
 const InternationalNews = () => {
   const [news, setNews] = useState([]);
-  console.log(news);
   useEffect(() => {
     fetch("InternationalNews.json")
       .then((res) => res.json())

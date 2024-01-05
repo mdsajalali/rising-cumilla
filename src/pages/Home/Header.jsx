@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaFacebook, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import logo from "../../assets/images/logo.webp";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [formattedDate, setFormattedDate] = useState("");
 
@@ -100,9 +101,9 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="cursor-pointer">
+          <Link to="/" className="cursor-pointer">
             <img className="w-56" src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-end hidden md:block">
           <button className="btn btn-ghost btn-circle">
