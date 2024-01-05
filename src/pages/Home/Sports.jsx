@@ -3,7 +3,7 @@ const Sports = () => {
     <div className="max-w-[1230px] mx-auto my-10">
       <h1 className="text-center text-2xl my-5">খেলা & শিক্ষা</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        <div className="flex col-span-2 gap-5 my-5">
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-center  col-span-2 gap-5 my-5">
           <div>
             <img
               className="w-52"

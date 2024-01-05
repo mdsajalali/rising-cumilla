@@ -77,7 +77,7 @@ const Header = () => {
             <img className="w-56" src={logo} alt="logo" />
           </a>
         </div>
-        <div className="navbar-end hidden sm:block">
+        <div className="navbar-end hidden md:block">
           <button className="btn btn-ghost btn-circle">
             <FaFacebook size={25} />
           </button>
@@ -92,7 +92,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-between ml-5">
+      <div className="flex items-center justify-between   px-5">
         <p>জানুয়ারি ৪, ২০২৪ ৩:৩৯ পিএম</p>
         <p>Contribute News কনভার্টার</p>
       </div>
