@@ -7,6 +7,7 @@ import Heading from "./pages/Home/Heading";
 import InternationalNews from "./pages/Home/InternationalNews";
 import Navbar from "./pages/Home/Navbar";
 import NewsCarts from "./pages/Home/NewsCarts";
+import NewsInformation from "./pages/Home/NewsInformation";
 import Sports from "./pages/Home/Sports";
 import TopNews from "./pages/Home/TopNews";
 
@@ -25,6 +26,8 @@ const App = () => {
       <Heading />
       <DistrictNews />
       <Sports />
+      <Heading />
+      <NewsInformation />
       <Entertainment />
       <div className="bg-[#DFF2CA] max-w-[1230px] mx-auto px-5 rounded-sm">
         <h1 className="text-center my-10 pt-5   text-2xl">লাইফস্টাইল</h1>
