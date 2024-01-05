@@ -1,8 +1,9 @@
+import DistrictNews from "./pages/Home/DistrictNews";
 import Footer from "./pages/Home/Footer";
 import Header from "./pages/Home/Header";
+import Heading from "./pages/Home/Heading";
 import Navbar from "./pages/Home/Navbar";
-import Heading from './pages/Home/Heading';
-import DistrictNews from "./pages/Home/DistrictNews";
+import NewsCarts from "./pages/Home/NewsCarts";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       </div>
       <Navbar />
       <Heading />
+      <NewsCarts />
       <DistrictNews />
       <Footer />
     </div>
