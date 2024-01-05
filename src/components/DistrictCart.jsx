@@ -1,13 +1,13 @@
+import { Link  } from "react-router-dom";
 
-const DistrictCart = ({news}) => {
-    console.log(news)
-    const {img, news_desc} = news;
+const DistrictCart = ({ news }) => {
+ 
   return (
-    <div>
-        <img className="w-72" src={img} alt="" />
-        <p>{news_desc}</p>
-    </div>
-  )
-}
+    <Link to={`districtNewsDetail/${news.id}`}>
+      <img className="w-72" src={news.img} alt="" />
+      <p className="mt-2">{news.news_desc}</p>
+    </Link>
+  );
+};
 
-export default DistrictCart
+export default DistrictCart;
