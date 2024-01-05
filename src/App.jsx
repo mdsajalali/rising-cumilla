@@ -1,3 +1,4 @@
+import Country from "./pages/Home/Country";
 import DistrictNews from "./pages/Home/DistrictNews";
 import Footer from "./pages/Home/Footer";
 import Header from "./pages/Home/Header";
@@ -16,6 +17,7 @@ const App = () => {
       <Heading />
       <TopNews />
       <NewsCarts />
+      <Country />
       <DistrictNews />
       <div className="bg-[#DFF2CA] max-w-[1230px] mx-auto px-5 rounded-sm">
         <h1 className="text-center my-10 pt-5   text-2xl">লাইফস্টাইল</h1>
