@@ -9,7 +9,9 @@ const LatestNews = () => {
   }, []);
   return (
     <div>
-      <h1 className="text-2xl font-bold">সর্বশেষ</h1>
+      <div className="text-2xl mt-12 font-bold border-l-8 border-red-500">
+        <h1 className="ml-5">সর্বশেষ</h1>
+      </div>
       <div>
         {news.map((news) => (
           <div key={news.id} className="flex gap-4 my-5">

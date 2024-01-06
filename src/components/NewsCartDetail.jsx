@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ReadMore from "./ReadMore";
 import LatestNews from "../pages/Home/LatestNews";
+import DetailsHeading from "./../pages/Home/DetailsHeading";
+import ReadMore from "./ReadMore";
 
 const NewsCartDetail = () => {
   const { id } = useParams();
@@ -18,7 +19,7 @@ const NewsCartDetail = () => {
         setLoading(false);
       });
   }, [idx]);
-  
+
   if (loading) {
     return (
       <div className="flex items-center  justify-center h-100">
@@ -28,14 +29,19 @@ const NewsCartDetail = () => {
   }
   console.log(news);
   return (
-    <div className="max-w-[1230px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="max-w-[1230px] mx-auto px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
         <div>
-          <img   src={news.img} alt="" />
-          <hr className="my-5" />
-          <p>{news.news_desc}</p>
+          <DetailsHeading />
+          <div>
+            <img src={news.img} alt="" />
+            <hr className="my-5" />
+            <p>{news.news_desc}</p>
+          </div>
         </div>
-        <LatestNews />
+        <div>
+          <LatestNews />
+        </div>
       </div>
       <ReadMore />
     </div>
