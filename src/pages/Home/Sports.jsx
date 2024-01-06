@@ -6,7 +6,7 @@ const Sports = () => {
         <div className="flex flex-wrap md:flex-nowrap items-center justify-center  col-span-2 gap-5 my-5">
           <div>
             <img
-              className="w-52"
+              className="w-52 mx-auto"
               src="https://i0.wp.com/risingcumilla.com/wp-content/uploads/2024/01/RisingCumilla.Com-Mbappe-and-Erling-Haaland.webp?fit=1200%2C750&ssl=1"
               alt=""
             />
@@ -16,7 +16,7 @@ const Sports = () => {
               এমবাপ্পেকে ছাড়িয়ে আর্লিং হালান্ড বিশ্বের সবচেয়ে দামী ফুটবলার
             </p>
             <img
-              className="w-52"
+              className="w-52 mx-auto"
               src="https://i0.wp.com/risingcumilla.com/wp-content/uploads/2024/01/RisingCumilla.Com-Mbappe-and-Erling-Haaland.webp?fit=1200%2C750&ssl=1"
               alt=""
             />
