@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaFacebook, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
-import logo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.webp";
 const Header = () => {
   const [formattedDate, setFormattedDate] = useState("");
 
@@ -19,7 +19,7 @@ const Header = () => {
       const ampm = hours >= 12 ? "PM" : "AM";
 
       hours = hours % 12;
-      hours = hours || 12; 
+      hours = hours || 12;
 
       const newFormattedDate = `${month}/${day}/${year} ${hours}:${minutes}:${seconds} ${ampm}`;
       setFormattedDate(newFormattedDate);
@@ -105,7 +105,7 @@ const Header = () => {
             <img className="w-56" src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="navbar-end hidden md:block">
+        <div className="navbar-end text-end hidden md:block">
           <button className="btn btn-ghost btn-circle">
             <FaFacebook size={25} />
           </button>
