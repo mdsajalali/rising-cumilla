@@ -1,7 +1,13 @@
 const CountryNews = () => {
   return (
     <div className="max-w-[1230px] mx-auto my-10">
-      <h1 className="mb-3 text-2xl">সারাদেশ</h1>
+      <div className="flex gap-5 ">
+        <h1 className="mb-3 text-2xl  ">সারাদেশ</h1>
+        <div>
+          <div className="w-36 mt-2 border-red-500 border-t-4 pb-2"></div>
+          <div className="w-36  border-red-500 border-t-4 p-4"></div>
+        </div>
+      </div>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3  ">
         <div>
           <img
