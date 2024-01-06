@@ -102,6 +102,7 @@ const CountryNews = () => {
           />
         </div>
       </div>
+      <hr className="mt-10" />
     </div>
   );
 };

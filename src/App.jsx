@@ -10,7 +10,7 @@ import TopNews from "./pages/Home/TopNews";
 
 const App = () => {
   return (
-    <div className="bg-[#FAFFF1] min-h-screen">
+    <div className="bg-[#FAFFF1] min-h-screen px-5">
       <Heading />
       <TopNews />
       <NewsCarts />
