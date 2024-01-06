@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ReadMore from "./ReadMore";
+import LatestNews from "../pages/Home/LatestNews";
 
 const NewsCartDetail = () => {
   const { id } = useParams();
@@ -27,8 +29,15 @@ const NewsCartDetail = () => {
   console.log(news);
   return (
     <div className="max-w-[1230px] mx-auto">
-      <img className="w-1/2" src={news.img} alt="" />
-      <p>{news.news_desc}</p>f
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+          <img   src={news.img} alt="" />
+          <hr className="my-5" />
+          <p>{news.news_desc}</p>
+        </div>
+        <LatestNews />
+      </div>
+      <ReadMore />
     </div>
   );
 };
