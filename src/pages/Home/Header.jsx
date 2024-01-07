@@ -8,6 +8,10 @@ const Header = () => {
 
   const [formattedDate, setFormattedDate] = useState("");
 
+  const toggleNavbar = () => {
+    setClick(!click);
+  };
+
   useEffect(() => {
     const updateDate = () => {
       const currentDate = new Date();
@@ -35,11 +39,25 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex items-center flex-wrap gap-5 justify-evenly pt-5 relative">
+      <div className="flex items-center flex-col md:flex-row gap-5 justify-evenly pt-5 relative">
         <div>
+          {/* mobile view start here*/}
+          <div className="sm:hidden block">
+            <div className="flex items-center gap-24">
+              <div>
+                <Link to="/">
+                  <img className="w-56" src={logo} alt="logo" />
+                </Link>
+              </div>
+              <div className="cursor-pointer" onClick={toggleNavbar}>
+                <TbMenu2 size={25} />
+              </div>
+            </div>
+          </div>
+          {/* mobile view end here */}
           <div
-            className="cursor-pointer xl:-ml-6"
-            onClick={() => setClick(!click)}
+            className="cursor-pointer  hidden sm:block  xl:-ml-6"
+            onClick={toggleNavbar}
           >
             <TbMenu2 size={25} />
           </div>
@@ -110,11 +128,11 @@ const Header = () => {
         </div>
         <div>
           <Link to="/">
-            <img className="w-56" src={logo} alt="logo" />
+            <img className="w-56  hidden sm:block" src={logo} alt="logo" />
           </Link>
         </div>
         <div>
-          <div className="flex gap-3 sm:gap-5 cursor-pointer xl:-mr-6">
+          <div className="flex gap-3 sm:gap-5 cursor-pointer  xl:-mr-6">
             <FaFacebook size={25} />
 
             <FaTwitter size={25} />
