@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaFacebook, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TbMenu2 } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -6,14 +6,45 @@ import logo from "../../assets/images/logo.webp";
 const Header = () => {
   const [click, setClick] = useState(false);
 
+  const [formattedDate, setFormattedDate] = useState("");
+
+  useEffect(() => {
+    const updateDate = () => {
+      const currentDate = new Date();
+
+      const month = currentDate.getMonth() + 1;
+      const day = currentDate.getDate();
+      const year = currentDate.getFullYear();
+
+      let hours = currentDate.getHours();
+      const minutes = currentDate.getMinutes();
+      const seconds = currentDate.getSeconds();
+      const ampm = hours >= 12 ? "PM" : "AM";
+
+      hours = hours % 12;
+      hours = hours || 12;
+
+      const newFormattedDate = `${month}/${day}/${year} ${hours}:${minutes}:${seconds} ${ampm}`;
+      setFormattedDate(newFormattedDate);
+    };
+
+    const intervalId = setInterval(updateDate, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-      <div className="flex items-center  justify-evenly pt-5   relative ">
+    <>
+      <div className="flex items-center flex-wrap gap-5 justify-evenly pt-5 relative">
         <div>
-          <div className="cursor-pointer" onClick={() => setClick(!click)}>
+          <div
+            className="cursor-pointer xl:-ml-6"
+            onClick={() => setClick(!click)}
+          >
             <TbMenu2 size={25} />
           </div>
           {click && (
-            <nav className="w-[250px] bg-white list-none  cursor-pointer fixed top-0 left-0 min-h-screen   ">
+            <nav className="w-[250px] bg-white list-none  cursor-pointer fixed top-0 left-0 min-h-screen    ">
               <Link to="/">
                 <img
                   className="w-full px-10 py-5  bg-[#F5FFDC]"
@@ -68,7 +99,7 @@ const Header = () => {
                 <Link to="/">ব্যবহারের শর্তাবলি</Link>
                 <Link to="/">গোপনীয়তার নীতি</Link>
               </div>
-              <div className="flex gap-3 sm:gap-5 cursor-pointer my-5    justify-center">
+              <div className="flex gap-3 sm:gap-5 cursor-pointer my-5    justify-center ">
                 <FaFacebook size={25} />
                 <FaTwitter size={25} />
                 <FaYoutube size={25} />
@@ -83,7 +114,7 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          <div className="flex gap-3 sm:gap-5 cursor-pointer">
+          <div className="flex gap-3 sm:gap-5 cursor-pointer xl:-mr-6">
             <FaFacebook size={25} />
 
             <FaTwitter size={25} />
@@ -94,6 +125,11 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="flex max-w-[1230px] mx-auto flex-wrap items-center justify-between px-5">
+        <p className="hidden xl:block">{formattedDate}</p>
+        <p className="hidden xl:block">Contribute News কনভার্টার</p>
+      </div>
+    </>
   );
 };
 

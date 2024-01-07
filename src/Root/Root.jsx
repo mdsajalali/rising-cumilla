@@ -6,9 +6,7 @@ import Navbar from "../pages/Home/Navbar";
 const Root = () => {
   return (
     <div className="bg-[#FAFFF1]">
-      <div className="">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <Outlet />
       <Footer />
