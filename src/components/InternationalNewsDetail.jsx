@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import DetailsHeading from "../pages/Home/DetailsHeading";
+import LatestNews from "../pages/Home/LatestNews";
+import ReadMore from "./ReadMore";
 
 const InternationalNewsDetail = () => {
   const { id } = useParams();
@@ -27,9 +30,21 @@ const InternationalNewsDetail = () => {
     );
   }
   return (
-    <div className="max-w-[1230px] mx-auto">
-      <img className="w-1/2" src={news.img} alt="" />
-      <p>{news.news_desc}</p>
+    <div className="max-w-[1230px] mx-auto px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+        <div>
+          <DetailsHeading />
+          <div>
+            <img src={news.img} alt="" />
+            <hr className="my-5" />
+            <p>{news.news_desc}</p>
+          </div>
+        </div>
+        <div>
+          <LatestNews />
+        </div>
+      </div>
+      <ReadMore />
     </div>
   );
 };
