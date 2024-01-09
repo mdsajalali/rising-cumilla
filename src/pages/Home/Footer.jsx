@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.webp";
 const Footer = () => {
   return (
@@ -6,7 +7,9 @@ const Footer = () => {
         <div className="max-w-[1230px] mx-auto footer">
           <nav>
             <header className="footer-title">
-              <img className="w-60" src={logo} alt="Logo" />
+              <Link to="/">
+                <img className="w-60" src={logo} alt="Logo" />
+              </Link>
             </header>
             <div className="flex gap-10">
               <a className="link link-hover">আমাদের সম্পর্কে </a>
