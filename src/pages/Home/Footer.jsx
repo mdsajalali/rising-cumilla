@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.webp";
 const Footer = () => {
+  const getFullYear = new Date().getFullYear()
   return (
     <>
       <footer className=" p-10 bg-[#C6EBC5]">
@@ -41,7 +42,10 @@ const Footer = () => {
       </footer>
       <footer className="footer footer-center p-4 bg-[#0E0E0E] text-white">
         <aside>
-          <p>স্বত্ব © ২০২৩ রাইজিং কুমিল্লা। Design & Developed by BDIGITIC </p>
+          <p>
+            স্বত্ব © {getFullYear} রাইজিং কুমিল্লা। Design & Developed by
+            BDIGITIC 
+          </p>
         </aside>
       </footer>
     </>
