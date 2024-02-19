@@ -1,8 +1,15 @@
-# React + Vite
+# Rising Cumilla
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌐 Objective
 
-Currently, two official plugins are available:
+### "Rising Cumilla" is a React-based buyer project with Tailwind CSS styling, focusing on user-friendly UI design across multiple pages. The primary goal is to enable seamless navigation, allowing users to click on cards for detailed news information, enhancing their reading experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Live Link: [Rising Cumilla](https://risingcumilla.vercel.app/)
+
+## Used Technologies
+
+- [x] Html
+- [x] TailwindCSS With [DaisyUI]
+- [x] React.js
+- [x] React Router Dom
+- [x] React Icons
