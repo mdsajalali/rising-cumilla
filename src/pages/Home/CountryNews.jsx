@@ -1,14 +1,16 @@
 const CountryNews = () => {
   return (
     <div className="max-w-[1230px] mx-auto my-10">
-      <div className="flex gap-5 ">
-        <h1 className="mb-3 text-2xl  ">সারাদেশ</h1>
-        <div>
-          <div className="w-36 mt-2 border-red-500 border-t-4 pb-2"></div>
-          <div className="w-36  border-red-500 border-t-4 p-4"></div>
+      <div className="grid grid-cols-12  ">
+        <h1 className="mb-3 text-2xl col-span-4 sm:col-span-2 lg:col-span-1  ">
+          সারাদেশ
+        </h1>
+        <div className="col-span-8 sm:col-span-10 lg:col-span-11 lg:ml-4 xl:ml-0">
+          <div className=" w-full   mt-2 border-red-500 border-t-4 pb-2"></div>
+          <div className=" w-full  border-red-500 border-t-4 p-4"></div>
         </div>
       </div>
-      <div className="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3  ">
+      <div className="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center ">
         <div>
           <img
             src="https://i0.wp.com/risingcumilla.com/wp-content/uploads/2024/01/RisingCumilla.Com-voting.webp?fit=1200%2C750&ssl=1"
