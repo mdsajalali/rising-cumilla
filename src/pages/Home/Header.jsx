@@ -35,8 +35,8 @@ const Header = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex items-center  flex-wrap gap-5 justify-evenly pt-5 relative">
+    <div className="max-w-[1230px] mx-auto  ">
+      <div className="flex items-center  flex-wrap gap-5  justify-between  pt-5 relative px-5">
         <div>
           <div
             className="cursor-pointer xl:-ml-6"
@@ -46,7 +46,7 @@ const Header = () => {
           </div>
           {click && (
             <nav className="w-[250px] z-10 bg-white list-none  cursor-pointer fixed top-0 left-0 min-h-screen    ">
-              <div className="flex items-center px-10 py-5  bg-[#F5FFDC]">
+              <div className="flex items-center  px-10 py-5  bg-[#F5FFDC]">
                 <Link to="/">
                   <img className="w-full pr-5 " src={logo} alt="" />
                 </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                 <Link to="/">ব্যবহারের শর্তাবলি</Link>
                 <Link to="/">গোপনীয়তার নীতি</Link>
               </div>
-              <div className="flex gap-3 sm:gap-5 cursor-pointer my-5    justify-center ">
+              <div className="flex gap-3  sm:gap-5 cursor-pointer my-5    justify-center   ">
                 <FaFacebook size={25} />
                 <FaTwitter size={25} />
                 <FaYoutube size={25} />
@@ -127,11 +127,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex max-w-[1230px] mx-auto flex-wrap items-center justify-between px-5">
+      <div className="flex max-w-[1230px] mx-auto flex-wrap items-center justify-between  ">
         <p className="hidden xl:block">{formattedDate}</p>
         <p className="hidden xl:block">Contribute News কনভার্টার</p>
       </div>
-    </>
+    </div>
   );
 };
 
