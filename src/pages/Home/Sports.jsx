@@ -1,7 +1,9 @@
 const Sports = () => {
   return (
     <div className="max-w-[1230px] mx-auto my-10">
-      <h1 className="text-center text-2xl my-5">খেলা & শিক্ষা</h1>
+      <h1 className="text-center text-2xl my-5 border-b-4 border-red-400 w-36 mx-auto pb-1">
+        খেলা & শিক্ষা
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         <div className="flex flex-wrap md:flex-nowrap items-center justify-center  col-span-2 gap-5 my-5">
           <div>
@@ -11,8 +13,7 @@ const Sports = () => {
               alt=""
             />
 
-            <p className="text-[15px] my-2 text-center"
-            >
+            <p className="text-[15px] my-2 text-center">
               এমবাপ্পেকে ছাড়িয়ে আর্লিং হালান্ড বিশ্বের সবচেয়ে দামী ফুটবলার
             </p>
             <img

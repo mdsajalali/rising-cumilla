@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <div className="max-w-[1230px] mx-auto  ">
-      <div className="flex items-center  flex-wrap gap-5  justify-between  pt-5 relative px-5">
+      <div className="flex items-center  flex-wrap gap-5  justify-center sm:justify-between  pt-5 relative px-5">
         <div>
           <div
             className="cursor-pointer xl:-ml-6"
@@ -45,7 +45,7 @@ const Header = () => {
             <TbMenu2 size={25} />
           </div>
           {click && (
-            <nav className="w-[250px] z-10 bg-white list-none  cursor-pointer fixed top-0 left-0 min-h-screen    ">
+            <nav className="w-[250px] overflow-x-auto z-10 bg-white list-none  cursor-pointer fixed top-0 left-0 min-h-screen    ">
               <div className="flex items-center  px-10 py-5  bg-[#F5FFDC]">
                 <Link to="/">
                   <img className="w-full pr-5 " src={logo} alt="" />
@@ -96,7 +96,7 @@ const Header = () => {
 
               <hr className="my-5 " />
 
-              <div className="flex flex-col gap-5 px-10 py-2">
+              <div className="  flex-col hidden lg:flex gap-5 px-10 py-2">
                 <Link to="/">আমাদের সম্পর্কে</Link>
                 <Link to="/">ব্যবহারের শর্তাবলি</Link>
                 <Link to="/">গোপনীয়তার নীতি</Link>

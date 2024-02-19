@@ -11,7 +11,9 @@ const DistrictNews = () => {
   return (
     <div className="bg-[#EEF3DC] p-2">
       <div className="max-w-[1230px] mx-auto list-none ">
-        <h1 className="text-center my-10 text-2xl font-bold">কুমিল্লা</h1>
+        <h1 className="text-center my-10 text-2xl font-bold border-b-4 border-red-400 w-[85px] mx-auto pb-1">
+          কুমিল্লা
+        </h1>
         <nav className="flex flex-wrap gap-5 px-5 sm:px-10 md:px-20 items-center justify-center">
           <li>
             <a href="#">সকল খবর</a>

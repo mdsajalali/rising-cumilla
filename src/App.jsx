@@ -21,7 +21,9 @@ const App = () => {
       <Heading />
       <Entertainment />
       <div className="bg-[#DFF2CA] max-w-[1230px] mx-auto px-5 rounded-sm">
-        <h1 className="text-center my-10 pt-5   text-2xl">লাইফস্টাইল</h1>
+        <h1 className="text-center my-10 pt-5 border-b-4 border-red-400 w-32 mx-auto pb-1  text-2xl">
+          লাইফস্টাইল
+        </h1>
         <NewsCarts />
       </div>
     </div>
