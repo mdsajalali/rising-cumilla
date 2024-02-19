@@ -11,10 +11,10 @@ const DistrictNews = () => {
   return (
     <div className="bg-[#EEF3DC] p-2">
       <div className="max-w-[1230px] mx-auto list-none ">
-        <h1 className="text-center my-10">কুমিল্লা</h1>
-        <nav className="flex gap-10 flex-wrap px-20 items-center justify-center">
+        <h1 className="text-center my-10 text-2xl font-bold">কুমিল্লা</h1>
+        <nav className="flex flex-wrap gap-5 px-5 sm:px-10 md:px-20 items-center justify-center">
           <li>
-            <a href="#"> সকল খবর</a>
+            <a href="#">সকল খবর</a>
           </li>
           <li>
             <a href="#">কুমিল্লা সিটি</a>
@@ -68,6 +68,7 @@ const DistrictNews = () => {
             <a href="#">হোমনা</a>
           </li>
         </nav>
+
         <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 my-10">
           {news.map((news) => (
             <DistrictCart key={news.id} news={news} />
