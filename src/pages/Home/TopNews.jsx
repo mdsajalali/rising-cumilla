@@ -15,7 +15,7 @@ const TopNews = () => {
             ও দিনের তাপমাত্রা সামান্য বাড়তে পারে।
           </p>
         </div>
-        <div className="md:col-span-3">
+        <div className="md:col-span-3 border-l border-r px-3">
           <div>
             <h1 className="text-2xl">সর্বশেষ</h1>
             <p className="mt-2 cursor-pointer">

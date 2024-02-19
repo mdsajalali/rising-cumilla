@@ -30,8 +30,8 @@ const NewsCartDetail = () => {
   console.log(news);
   return (
     <div className="max-w-[1230px] mx-auto px-5">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
-        <div>
+      <div className="md:flex   gap-10 justify-between">
+        <div className="max-w-[750px]">
           <DetailsHeading />
           <div>
             <img src={news.img} alt="" />
@@ -39,7 +39,7 @@ const NewsCartDetail = () => {
             <p>{news.news_desc}</p>
           </div>
         </div>
-        <div>
+        <div className="max-w-[450px]">
           <LatestNews />
         </div>
       </div>
